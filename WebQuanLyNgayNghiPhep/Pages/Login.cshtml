@@ -1,0 +1,26 @@
+﻿@page
+@model WebQuanLyNgayNghiPhep.Pages._LoginModel
+@{
+    ViewData["Title"] = "Login";
+     Layout = "_LayoutLogin";
+}
+
+
+<div class="container col-lg-5 mt-5">
+    <div class="align-content-lg-center">
+        <img class="col-lg-7 mb-3"  src="~/TBD_Logo_ngang.png" />
+    </div>
+    
+   <div class="mb-3">
+  <label for="dangNhap" class="form-label">Đăng Nhập</label>
+  <input type="email" class="form-control" id="idDangNhap" placeholder="name@example.com">
+</div>
+
+<div class="mb-4">
+  <label for="matKhau" class="form-label">Mật Khẩu</label>
+ <input type="password" class="form-control" id="idMatKhau">
+</div>
+<div class="mb-3 d-grid gap-2">
+   <button type="button" class="btn btn-success">Đăng Nhập</button>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+﻿@page
+@model WebQuanLyNgayNghiPhep.Pages.NhanVienModel
+@{
+    ViewData["Title"] = "Quản Lý Thông Tin Nhân Viên";
+}
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Mã NV</th>
+                <th scope="col">Tên</th>
+                <th scope="col">Họ Đệm</th>
+                <th scope="col">Chức Danh</th>
+                <th scope="col">Thâm Niên</th>
+                <th scope="col">Phép Trong Năm</th>
+                <th scope="col">Phép Sức Khỏe</th>
+                <th scope="col">Phép Thâm Niên</th>
+                <th scope="col">Phép Còn lại</th>
+                <th scope="col">Phép Đã Ứng</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>001</td>
+                <td>A</td>
+                <td>Nguyễn Văn</td>
+                <td>Nhân Viên</td>
+                <td>5 năm</td>
+                <td>12 ngày</td>
+                <td>3 ngày</td>
+                <td>1 ngày</td>
+                <td>16 ngày</td>
+                <td>Không có</td>
+               
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="ke-ngang d-flex justify-content-center pt-3">
+    <hr width="100%" color="gray" size="3px">
+</div>
+
+<div class="container col-lg-12 mt-2 justify-content-start">
+    <h4 class="mb-3">Tạo mới ngày nghỉ</h4>
+    <div class="mb-3 col-lg-4">
+        <label for="lyDo" class="form-label">Lý Do</label>
+        <input type="text" class="form-control" id="idLyDo" placeholder="abc">
+    </div>
+
+    <div class="mb-4 col-lg-4">
+        <label for="loaiphep" class="form-label">Loại Phép</label>
+        <select class="form-select" aria-label="Chọn Loại Phép">
+            <option selected>Phép Thường Niên</option>
+            <option value="1">Phép Thâm Niên</option>
+            <option value="2">Phép Sức Khỏe</option>
+        </select>
+    </div>
+   
+    <div class="row mt-4">
+        <div class="batdaunghi col-lg-2">
+        <label for="batdaunghi" class="form-label">Ngày bắt đầu nghỉ</label>
+        <input type="date" class="form-control" id="ngaybatdaunghi" placeholder="">
+        </div>
+
+        <div class="ketthucnghi col-lg-2">
+        <label for="ketthucnghi" class="form-label">Ngày kết thúc nghỉ</label>
+        <input type="date" class="form-control" id="ngayketthucnghi" placeholder="">
+        </div>
+    </div>
+
+     <div class="mt-5">
+        <button type="button" class="btn btn-success">Thêm</button>
+        <button type="button" class="btn btn-outline-danger">Hủy Bỏ</button>
+    </div>
+</div>
+
+</div>
